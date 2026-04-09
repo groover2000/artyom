@@ -10,9 +10,6 @@
 
 Запустить ras как службу, можно один раз через консоль
 
-```bash
-sc create "1C RAS" binPath= "\"C:\Program Files\1cv8\8.3.27.1859\bin\ras.exe\" --service --port=1545" start= auto
-```
 В хэлпе ключи есть
 
 Но смысла от этого мало
@@ -51,6 +48,12 @@ net start "%SrvName%"
 ```
 
 Запустить просто батник, само всё сделается, появится служба
+
+Или так
+
+```bash
+sc create "1C RAS" binPath= "\"C:\Program Files\1cv8\8.3.27.1859\bin\ras.exe\" --service --port=1545" start= auto
+```
 
 Или мышкой
 
